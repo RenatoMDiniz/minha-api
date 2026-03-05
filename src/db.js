@@ -1,5 +1,6 @@
 const sqlite3 = require("sqlite3").verbose();
-const db = new sqlite3.Database("./database.sqlite");
+const dbPath = process.env.DB_PATH || "./database.sqlite";
+const db = new sqlite3.Database(dbPath);
 
 // Cria as tabelas se não existirem
 db.serialize(() => {
