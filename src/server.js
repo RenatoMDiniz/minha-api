@@ -9,3 +9,10 @@ if (require.main === module) {
 }
 
 module.exports = { app, startServer };
+
+// produtos não possui rota PUT nem DELETE
+// vendedores não possui rota PUT nem DELETE
+// movimentacoes não possui rota PUT nem DELETE
+
+
+// response codes e verificações de erro estão boas, parabéns
